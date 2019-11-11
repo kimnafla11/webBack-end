@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+   var m = Math.random()*100;//정수로 만들어주기 위해 100곱함
+   var i = Math.floor(m)%3;//i의 값은 0,1,2
+   switch(i){
+   case 0:
+      document.body.style.backgroundColor = "violet";
+      break;
+   case 1:
+      document.body.style.backgroundColor = "lightskyblue";
+      break;
+   case 2:
+      document.body.style.backgroundColor = "red";
+      break;
+   }
+   document.write("m = "+m+": i ="+ i);
+</script>
+</body>
+</html>

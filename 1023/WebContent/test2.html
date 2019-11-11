@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 스타일 동적 변경</title>
+<script>
+function change() {
+	var span = document.getElementById("mySpan"); 
+	span.style.color = "green"; // 글자 색 green
+	span.style.fontSize = "30px"; // 글자 크기는 30픽셀
+	span.style.display = "block"; // 블록 박스로 변경
+	span.style.width = "6em"; // 박스의 폭. 6 글자 크기
+	span.style.border = "3px dotted magenta"; // 3픽셀 점선 magenta 테두리
+	span.style.margin = "20px"; // 상하좌우 여백 20px
+}
+function origin(){//원래대로 만드는 origin() 함수를 정의
+	var span = document.getElementById("mySpan"); 
+	span.style.color = "red"; // 글자 색 Red
+	span.style.fontSize = "15px"; // 글자 크기는 15픽셀
+	//span.style.display = "block";
+	span.style.width = "";
+	span.style.border = "";
+	span.style.margin = ""; 
+}
+function changeColor(p){
+	p.style.backgroundColor = "red";	
+}
+function unchangeColor(p){
+	p.style.backgroundColor = "white";
+}
+</script>
+</head>
+<body>
+<h3>CSS 스타일 동적 변경</h3>
+<hr>
+<p style="color:blue" onmouseover="changeColor(this)" onmouseout="unchangeColor(this)">
+	이것은<!-- this를 파라미터로 넘겨주고 p를 넘겨주는것임 --> 
+    <span id="mySpan" style="color:red">문장입니다.</span>
+</p>
+<input type="button" value="스타일변경"
+	onclick="change()" ondblclick="origin()">
+	<!-- onclick는 이벤트리스너이며 여러개를 붙일수있다. ondblclick이벤트는 더블클릭 -->
+	<!-- 하나의 버튼에 두가지 이벤트를 넣을수있다. -->
+</body>
+</html>

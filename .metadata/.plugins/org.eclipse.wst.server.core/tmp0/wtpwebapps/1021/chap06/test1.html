@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수</title>
+<script>
+function adder(a, b) { // 함수 작성
+	var sum;
+	sum = a + b;
+	return sum;
+}//중괄호로 묶여있따!
+</script>
+</head>
+<body>
+<h3>함수 adder()</h3>
+<hr>
+<script>
+	var a = prompt("num1","0");
+	var b = prompt("num2","0");
+	var an = parseInt(a);
+	var bn = parseInt(b);
+	var n = adder(an, bn); // 함수 호출
+	document.write(a+"+"+b+" = " + n + "<br>");
+</script>
+</body>
+</html>

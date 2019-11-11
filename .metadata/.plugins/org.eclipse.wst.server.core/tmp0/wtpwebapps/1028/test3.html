@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function addStr(){
+	var parent = document.getElementById("mypara");
+	//parent.innerHTML += "게으른 소 ";//같은 p태그 내에 넣기
+	var div = document.createElement("div");//"div"엘리먼트를 만든다
+	div.style.fontSize= "15px";
+	div.innerHTML = "게으른 소";
+
+	/*div.onclick = function() {//div를 클릭했을때 호출하는 함수
+		//var p = this.parentElement; // 부모 HTML 태그 요소
+		//parent는 이미 가져와있기떄문에 꼭 선언안해줘도 된다
+		p.removeChild(this); // 자신을 부모로부터 제거
+	};*/
+	var size = 15;
+	div.ondblclick = function(){
+		div.style.fontSize = ++size+"px";
+	}
+	parent.appendChild(div);//새로만든 div를 append해주어야함
+
+
+}
+</script>
+</head>
+<body>
+<button onclick = "addStr()">누구게?</button>
+<!-- 버튼을 눌렀을때 addStr()함수 호출함 -->
+<p id = "mypara">나는 </p>
+<p id = "end">입니다.....</p>
+</body>
+</html>

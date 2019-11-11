@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>지역변수와 전역변수</h3>
+<hr>
+<script>
+var x=100; // 전역변수 x
+var y=200;	//전역변수 y
+function f() { // 함수 f() 선언 
+	var x=1; // 지역변수 x
+	var y = 2; //지역변수 y에 2대입 
+	z = 300;//전역변수 z 300 var키워드를 쓰지 않았기때문에.
+	document.write("지역변수 x=" + x);
+	document.write("<br>");
+	document.write("전역변수 x=" + this.x+"<br>");//전역변수를 호출 할 때는 this키워드를 써줘야함ㄴ
+	document.write("전역변수 y = "+ this.y+"<br>");
+	document.write("지역변수 y = "+ y+"<br>");
+	document.write("전역변수 z = "+ z);
+	document.write("전역변수 z = "+ this.z)
+}
+
+f(); // 함수 f() 호출
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+package my.model;
+
+public class Movie {
+	private int movieId;
+	private String title;
+	private String maker;
+	private String memo;
+	private String movieImage;
+	
+
+}

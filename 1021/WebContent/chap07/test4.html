@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var departs = ["경영","컴공","게임"];
+	for(var i = 0; i< departs.length; i++)
+		document.write(departs[i]+"&nbsp");
+	
+	document.write("<hr>");
+	var movie = new Array();//빈 배열 생성
+	movie[0] = "yesterday";
+	movie[1] = "kill bill";
+	movie[2] = "증인";
+	movie[3] = "조커";
+	for(var i = 0; i< movie.length; i++)
+		document.write(movie[i]+"&nbsp")
+	document.write("<hr>");
+	var score = [45.1,55.6,77.4,55.9,20.0];
+	var sum = 0;//초기값 선언
+	for (var i =0; i<score.length; i++){
+		sum += score[i];
+	}
+	document.write("점수 합 : "+sum+"<br>");
+	document.write("평균 : "+ sum/score.length);
+</script>
+</body>
+</html>

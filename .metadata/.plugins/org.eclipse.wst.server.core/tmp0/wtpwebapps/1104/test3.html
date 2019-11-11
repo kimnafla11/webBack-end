@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onload로 이미지 크기 출력</title>
+<script>
+function changeImage() {
+	var myIndex = document.getElementById("myIndex");
+	var sel = document.getElementById("sel");//sel에 해당하는 애를 가져와라
+	var img = document.getElementById("myImg");//myImg태그를 구함
+	img.onload = function () {  // 이미지 크기 출력
+		 var mySpan = document.getElementById("mySpan");
+		mySpan.innerHTML = img.width + "x" + img.height;//이 계산은 이미지가 onload된 후에 실행되어야한다
+	}
+	var index= sel.selectedIndex; // 선택된 옵션 인덱스값을 가지고 있음
+	img.src = sel.options[index].value; // <option>의 value 속성
+	myIndex.innerHTML = index;
+}//이미지의 소스를 변경해주는데  인덱스번호로 바꾸게됨
+
+
+</script>
+</head>
+<body onload="changeImage()">
+<h3>onload로 이미지 크기 출력</h3>
+<hr>
+<form>
+<select id="sel" onchange="changeImage()"><!-- id = sel 이벤트리스너 onchange이며 호출하는 함수는 changeImage() -->
+	<option value="images/apple.png">사과
+	<option value="images/banana.png">바나나
+	<option value="images/mango.png">망고
+</select>
+<span id="mySpan">이미지 크기</span>
+선택한 인덱스 : <span id = "myIndex"></span><br>
+</form>
+<p><img id="myImg" src="images/apple.png" alt="."></p>
+</body>
+</html>

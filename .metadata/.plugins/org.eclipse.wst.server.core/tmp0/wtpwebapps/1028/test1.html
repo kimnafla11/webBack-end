@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- popup같은 새 창 띄우기 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 문서 작성기 만들기</title>
+<script>
+var win=null;
+function showHTML() {
+	if(win == null || win.closed)
+		win = window.open("", "outWin", "width=300,height=200");
+		//window를 오픈해라!
+	var textArea = document.getElementById("srcText");
+		//srcText에 입력된 내용을 가져와서 textArea에 저장해서 그 값을 document에 써라
+	var para1 = document.getElementById("para1");
+	var para2 = document.getElementById("para2");
+	var sum = eval(para1.value) + eval(para2.value);
+	//para는 str이기때문에 eval(para.value)를 써준다.
+	win.document.open();
+	win.document.write(textArea.value+"<br>"+sum);
+	win.document.close();
+}
+</script>
+</head>
+<body>
+<h3>HTML 문서 작성기 만들기 </h3>
+<hr>
+<p>아래에 HTML 문서를 작성하고 버튼을 클릭해 보세요.
+새 윈도우에 HTML 문서가 출력됩니다.</p>
+<textarea id="srcText" rows="10" cols="50"></textarea>
+<br>
+<input type = "text" id = "para1"><br>
+<input type = "text" id = "para2"><br>
+<!-- 숫자를 입력받고 그 숫자의 합계를 새 창에 써지도록 -->
+<br>
+<button onclick="showHTML()">HTML 문서 출력하기</button>
+</body>
+</html>

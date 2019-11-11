@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function subCheck(){
+	if(document.ff.id.value == "" || document.ff.password.value ==""){//ff의 id값이 공백이면 경고창 띄움
+		alert("아이디나 비밀번호를 입력하시오");
+		return false;
+	}else{
+		return true;
+	}
+}
+function resetCheck(){
+	alert("모든 데이터 초기화");
+}
+</script>
+</head>
+<body>
+<form name = "ff" action = "http://www.kpu.ac.kr" method = "post"
+onsubmit="return subCheck()" onreset = "resetCheck()">
+<!-- submit성공이면 subCheck()로 잘 됐는지 창을 띄우고 네이버로 보냄 -->
+아이디:<input type = "text" name = "id"><br>
+비밀번호:<input type = "password" name = "password"><br>
+<input type = "submit" value = "입력">
+<input type = "reset" value = "취소">
+</form>
+</body>
+</html>

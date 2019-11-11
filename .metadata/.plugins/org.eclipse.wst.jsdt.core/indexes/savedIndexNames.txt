@@ -1,0 +1,18 @@
+INDEX VERSION 1.3+C:\Users\kimna\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2819426290.index
+1174628062.index
+510673626.index
+3741988708.index
+847417080.index
+3952344008.index
+1085065456.index
+368997906.index
+2838454814.index
+1484100486.index
+3246178876.index
+2183602937.index
+818297983.index
+2093872517.index
+2454668140.index
+94214884.index
+3846730746.index

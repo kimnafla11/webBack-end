@@ -1,0 +1,113 @@
+@charset "utf-8";
+body {
+	font-family: "굴림", "굴림체", "맑은 고딕";
+	font-size: 9pt;
+	line-height: 150%;
+	background-color: #d6d6d6;
+	background-image: url(images/topbg.jpg);
+	background-repeat: repeat-x;
+	margin: 0px;
+}
+
+#wrap {
+	width: 900px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	/*float, clear는 맨 바깥 div이므로 줄 필요 없음*/
+}
+#page_header {
+	height: 102px;
+	width: 900px;
+	/*float, clear는 어차피 꽉찬 div이므로 줄 필요 없음*/
+}
+#toplogo {
+	float: left;
+	height: 35px;
+	width: 233px;
+	margin-top: 37px;
+}
+#topnav {
+	text-align: right;
+	clear: none;
+	float: right;
+	height: 22px;
+	width: 500px;
+	margin-top: 57px;
+}
+#topnav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#topnav ul li {
+	font-size: 11pt;
+	font-weight: bold;
+	display: inline;
+	margin-left: 15px;
+}
+#topnav ul li a {
+	color: #333;
+	text-decoration: none;
+}
+#topnav ul li a:hover {
+	color: #960;
+	text-decoration: underline;
+}
+#page_center {
+	width: 900px;
+	margin-top: 10px;
+}
+.mainimg {
+	float: left;
+	height: 414px;
+	width: 900px;
+}
+#bannerset {
+	height: 127px;
+	width: 900px;
+	margin-top: 10px;
+	float: left;
+}
+.banner1 {
+	background-image: url(images/ban1.jpg);
+	background-repeat: no-repeat;
+	clear: none;
+	float: left;
+	height: 100px;
+	width: 160px;
+	padding-top: 27px;
+	padding-left: 140px;
+}
+.banner2 {
+	background-image: url(images/ban2.jpg);
+	float: left;
+	height: 100px;
+	width: 160px;
+	padding-top: 27px;
+	padding-left: 140px;
+}
+.banner3 {
+	background-image: url(images/ban3.jpg);
+	height: 100px;
+	width: 160px;
+	padding-top: 27px;
+	padding-left: 140px;
+	float: left;
+}
+#bannerset a {
+	color: #333;
+	text-decoration: none;
+}
+#page_footer {
+	color: #FFF;
+	background-color: #000;
+	text-align: center;
+	clear: both;
+	float: left;
+	height: 60px;
+	width: 900px;
+	margin-top: 10px;
+	padding-top: 20px;
+}

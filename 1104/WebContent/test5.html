@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var i = 0;
+function changeImage(){
+	var mi = document.getElementById("myImage");
+	//var img = new Image();//이미지 객체 생성. 비어있음
+	if (i == 0){
+		mi.src = "images/apple.png";
+		i++;
+	}else if(i == 1){
+		mi.src = "images/banana.png";
+		i++;
+	}else{
+		mi.src = "images/mango.png";
+		i=0;
+	}
+	//i=0이면 사과, i=1이면 바나나, i = 2 망고가 출력되게하세요
+}
+</script>
+</head>
+<body>
+<button onclick = "changeImage()">이미지 변경</button><br>
+<img id = "myImage"/>
+</body>
+</html>

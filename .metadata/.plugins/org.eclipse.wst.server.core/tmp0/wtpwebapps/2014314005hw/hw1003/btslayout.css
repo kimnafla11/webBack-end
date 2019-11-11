@@ -1,0 +1,71 @@
+@charset "utf-8";
+body {
+	background-color: #E4AD85;
+	font-family: "맑은 고딕";
+}
+
+#wrap {
+	background-color: #FFF;
+	width:700px;
+	height: 720px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+
+#page_header {
+	clear: both;
+	float: left;
+	height: 40px;
+	width: 100%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+}
+.main_logo {
+	clear: both;
+	height: 40px;
+	width: 200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#content1 {
+	clear: both;
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+	margin-top: 20px;
+	text-align:center;
+}
+form {
+	margin-top: 20px;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+.sendimage {
+	clear: both;
+	height: 30px;
+	width: 100px;
+	margin-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.BTSimage {
+	clear: both;
+	height: 60px;
+	width: 60px;
+	margin: auto;
+}
+form table {
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	text-align: left;
+}

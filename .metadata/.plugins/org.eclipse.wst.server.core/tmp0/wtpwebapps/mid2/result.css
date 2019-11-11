@@ -1,0 +1,240 @@
+@charset "utf-8";
+#wrap {
+	clear: both;
+	height: 796px;
+	width: 1030px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#page_header {
+	clear: both;
+	float: left;
+	height: 148px;
+	width: 1030px;
+}
+#navbar {
+	height: 52px;
+	width: 1030px;
+	clear: both;
+	float: left;
+}
+#page_center {
+	clear: both;
+	float: left;
+	height: 400px;
+	width: 1030px;
+	background-color: #fbeaef;
+}
+body {
+	font-family: "맑은 고딕";
+	font-size: 12px;
+}
+.tablestyle {
+	background-color: #FFF;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ddd;
+	border-bottom-color: #ddd;
+}
+.tablestyle tr .menu {
+	background-color: #CCC;
+	border-top-width: medium;
+	border-top-style: solid;
+	border-top-color: #ddd;
+	font-family: "맑은 고딕";
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#page_footer {
+	clear: both;
+	float: left;
+	height: 196px;
+	width: 1030px;
+}
+.content {
+	border-top-width: medium;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #ddd;
+	border-bottom-color: #ddd;
+	text-align: right;
+}
+.order{
+	border-top-width: medium;
+	border-bottom-width: thin;
+	text-align: center;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+	border-top-color: #ddd;
+}
+.day{
+	border-top-width: medium;
+	border-bottom-width: thin;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+	border-top-style: solid;
+	border-top-color: #ddd;
+}
+
+.topbar {
+	clear: both;
+	float: left;
+	height: 34px;
+	width: 1030px;
+}
+.titlebar {
+	clear: both;
+	float: left;
+	height: 116px;
+	width: 1030px;
+}
+.nav1 {
+	clear: left;
+	float: left;
+	height: 52px;
+	width: 77px;
+}
+.nav2 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 89px;
+}
+.nav3 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 82px;
+}
+.nav4 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 89px;
+}
+.nav5 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 87px;
+}
+.nav6 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 87px;
+}
+.nav7 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 80px;
+}
+.nav8 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 81px;
+}
+.nav9 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 59px;
+}
+.nav10 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 86px;
+}
+.nav11 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 49px;
+}
+.nav12 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 50px;
+}
+.nav13 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 48px;
+}
+.nav14 {
+	clear: none;
+	float: left;
+	height: 52px;
+	width: 66px;
+}
+.banner1 {
+	clear: left;
+	float: left;
+	height: 350px;
+	width: 218px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.table_layout {
+	clear: right;
+	float: left;
+	height: 292px;
+	width: 691px;
+	margin-top: 50px;
+	margin-left: 200px;
+	background-color: #FFF;
+	padding-top: 50px;
+	padding-right: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 2em;
+	text-align: right;
+}
+.banner2 {
+	clear: left;
+	float: left;
+	height: 135px;
+	width: 359px;
+}
+.banner3 {
+	clear: none;
+	float: left;
+	height: 135px;
+	width: 334px;
+}
+.banner4 {
+	clear: none;
+	float: left;
+	height: 135px;
+	width: 337px;
+}
+.banner5 {
+	clear: left;
+	float: left;
+	height: 61px;
+	width: 360px;
+}
+.banner6 {
+	clear: none;
+	float: left;
+	height: 61px;
+	width: 334px;
+}
+.banner7 {
+	clear: right;
+	float: left;
+	height: 61px;
+	width: 336px;
+}

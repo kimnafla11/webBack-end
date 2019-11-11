@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function change(){
+	var divs = document.getElementsByTagName("div");
+	for(var i = 0; i< divs.length; i++){
+		divs[i].style.backgroundColor = "yellow";
+	}//getElementsByTagName은 배열을 반환하기때문에 for문으로 요소 하나하나를 바꿔주어야한다!
+}
+function change1(){
+	var divs = document.getElementsByClassName("i1");
+	for(var i = 0; i<divs.length; i++){
+		divs[i].style.backgroundColor = "red";
+	}
+}
+</script>
+</head>
+<body>
+<div class = "i1">나는</div><br>
+<div class = "i2">오늘</div><br>
+<div class = "i3">웹프로그램을</div><br>
+<div class = "i4">강의실에서</div><br>
+<div class = "i5">작성중입니다.</div><br>
+<button onclick = "change()">변경</button>
+<button onclick = "change1()">i1만 변경</button>
+<!-- 모든 div들이  -->
+</body>
+</html>
